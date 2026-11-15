@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://emotionvault.net/sitemap.xml
+#DaumWebMasterTool:e92dc0cd1d63bfde354e776054723d0bc9136be88b641930a54eab5cecbc85e4:cRG2DGEIEuBQ4uDiMLEb1w==
