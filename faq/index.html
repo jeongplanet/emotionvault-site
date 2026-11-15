@@ -75,6 +75,7 @@ h2{font-family:"Gowun Batang",serif;font-size:1.7rem;margin-bottom:22px}
 .mail{display:inline-block;margin-top:12px;font-weight:600;font-size:1.05rem}
 footer{border-top:1px solid var(--line);padding:26px 0 40px;font-size:.85rem;color:var(--ink2);display:flex;flex-wrap:wrap;gap:8px 20px}
 footer a{color:var(--ink2)}
+.visits{height:20px;width:auto;vertical-align:middle}
 @media (max-width:760px){
   .hero{grid-template-columns:1fr;padding-top:16px;gap:32px}
   .feats{grid-template-columns:1fr}
@@ -105,19 +106,8 @@ footer a{color:var(--ink2)}
     <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
     <a href="./">Frequently asked questions</a>
     <a href="mailto:gasmon0@gmail.com">Support</a>
-    <span id="visits" hidden></span>
+    <img class="visits" src="https://hits.sh/emotionvault.net.svg?view=today-total&label=Today%20%2F%20Total&color=2e7e77&labelColor=555555" alt="Today / Total visitors" height="20">
   </footer>
 </div>
-<!-- 방문자 수: GoatCounter(무료, 쿠키 없음). 집계 + 맨 아래 'Today / Total' 표시. 계정이 없거나 실패하면 표시만 숨김 -->
-<script data-goatcounter="https://emotionvault.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<script>
-(function(){
-  var B="https://emotionvault.goatcounter.com/counter/TOTAL.json", d=new Date().toISOString().slice(0,10);
-  function get(u){ return fetch(u).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ return j.count; }); }
-  Promise.all([get(B+"?start="+d), get(B)]).then(function(c){
-    var el=document.getElementById("visits"); el.textContent="Today "+c[0]+" · Total "+c[1]; el.hidden=false;
-  }).catch(function(){});
-})();
-</script>
 </body>
 </html>
