@@ -105,7 +105,19 @@ footer a{color:var(--ink2)}
     <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a>
     <a href="./">Frequently asked questions</a>
     <a href="mailto:gasmon0@gmail.com">Support</a>
+    <span id="visits" hidden></span>
   </footer>
 </div>
+<!-- 방문자 수: GoatCounter(무료, 쿠키 없음). 집계 + 맨 아래 'Today / Total' 표시. 계정이 없거나 실패하면 표시만 숨김 -->
+<script data-goatcounter="https://emotionvault.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function(){
+  var B="https://emotionvault.goatcounter.com/counter/TOTAL.json", d=new Date().toISOString().slice(0,10);
+  function get(u){ return fetch(u).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ return j.count; }); }
+  Promise.all([get(B+"?start="+d), get(B)]).then(function(c){
+    var el=document.getElementById("visits"); el.textContent="Today "+c[0]+" · Total "+c[1]; el.hidden=false;
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>
