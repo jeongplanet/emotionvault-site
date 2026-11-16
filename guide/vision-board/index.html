@@ -33,7 +33,18 @@ html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:"Plex",-apple-system,"Apple SD Gothic Neo","Hiragino Sans",system-ui,sans-serif;line-height:1.6}
 a{color:var(--jade)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+header{display:flex;align-items:center;gap:18px;padding:16px 0}
+.topnav{display:flex;gap:4px;flex:1;margin-left:14px}
+.topnav a{padding:7px 12px;border-radius:99px;text-decoration:none;color:var(--ink2);font-size:.92rem;font-weight:600;white-space:nowrap}
+.topnav a:hover{background:var(--bg2);color:var(--ink)}
+.topnav a[aria-current]{background:var(--ink);color:var(--bg)}
+#features,#support{scroll-margin-top:20px}
+@media (max-width:860px){
+  header{flex-wrap:wrap;gap:10px}
+  .topnav{order:3;flex-basis:100%;margin:0 -20px;padding:0 20px 2px;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .langs{margin-left:auto}
+}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .langs{display:flex;gap:4px;font-size:.85rem}
@@ -147,6 +158,7 @@ footer a{color:var(--ink2)}
 <div class="wrap">
   <header>
     <a class="brand" href="../../"><img src="../../assets/icon-192.png" alt="">Emotion Vault</a>
+    <nav class="topnav"><a href="../../">Home</a><a href="../../#features">Features</a><a href="../../guide/" aria-current=page>Guides</a><a href="../../faq/">FAQ</a><a href="../../#support">Support</a></nav>
     <nav class="langs" aria-label="Language"><a href="../.././" hreflang="en" aria-current=page>English</a><a href="../../ko/" hreflang="ko">한국어</a><a href="../../ja/" hreflang="ja">日本語</a></nav>
   </header>
 <article class="guide"><p class="eyebrow"><a href="../">Guides</a></p><h1>How to Make a Vision Board: Choosing Photos and Seeing It Every Day</h1><p class="lead">How to make a vision board, what photos to use, how many goals to include and how to see it daily with a home screen widget.</p><h2>What a vision board is</h2><p>A board of photos and words showing the life you want. Looking at it daily keeps your goals close.</p><h2>Choosing photos</h2><p>Pick photos that excite you instantly. Splitting into home, travel, work, relationships and health makes it easier.</p><h2>Three to six goals</h2><p>Too many blur your focus. Start with what you want most right now.</p><h2>Seeing it every day</h2><p>Visibility matters. A home screen widget means you see it several times a day.</p><h2>Example captions</h2><p>&#x27;Morning coffee in my own home&#x27;, &#x27;A month living on an island&#x27;, &#x27;Work with my name on it&#x27;. Short, present-tense lines.</p><div class="appnote"><b>Try it in Emotion Vault</b><p>Emotion Vault&#x27;s vision board lets you decorate with frames, clips and pins and keep it on your home screen.</p></div><h2>Related guides</h2><ul class="more-list"><li><a href="../stress-relief/">10 Ways to Relieve Stress: From Quick Fixes to Daily Habits</a></li><li><a href="../anger/">How to Calm Down When You&#x27;re Angry: 5 Steps Before You Say Something You&#x27;ll Regret</a></li><li><a href="../478-breathing/">How to Do 4-7-8 Breathing: One Minute for Anxiety and Sleep</a></li><li><a href="../cant-sleep/">Can&#x27;t Sleep? 7 Things to Try on Nights Your Mind Won&#x27;t Stop</a></li><li><a href="../mood-journal/">How to Keep a Mood Journal: One Minute a Day Is Enough</a></li><li><a href="../law-of-attraction/">How to Practice the Law of Attraction: 5 Daily Habits</a></li><li><a href="../affirmations/">Affirmation Examples and How to Write Your Own</a></li><li><a href="../letter-to-future-self/">How to Write a Letter to Your Future Self (With Examples)</a></li><li><a href="../subconscious/">How to Reprogram Your Subconscious Mind: Daily Habits</a></li></ul></article><section class="cta"><h2>Put today&#x27;s feelings away, gently.</h2><div class="stores"><a class="store" href="https://apps.apple.com/us/app/emotion-vault-stress-relief/id6814043279">Download on the App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk&hl=en">Get it on Google Play</a></div></section><!--/MAIN-->

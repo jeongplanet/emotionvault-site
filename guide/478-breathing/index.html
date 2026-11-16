@@ -33,7 +33,18 @@ html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:"Plex",-apple-system,"Apple SD Gothic Neo","Hiragino Sans",system-ui,sans-serif;line-height:1.6}
 a{color:var(--jade)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+header{display:flex;align-items:center;gap:18px;padding:16px 0}
+.topnav{display:flex;gap:4px;flex:1;margin-left:14px}
+.topnav a{padding:7px 12px;border-radius:99px;text-decoration:none;color:var(--ink2);font-size:.92rem;font-weight:600;white-space:nowrap}
+.topnav a:hover{background:var(--bg2);color:var(--ink)}
+.topnav a[aria-current]{background:var(--ink);color:var(--bg)}
+#features,#support{scroll-margin-top:20px}
+@media (max-width:860px){
+  header{flex-wrap:wrap;gap:10px}
+  .topnav{order:3;flex-basis:100%;margin:0 -20px;padding:0 20px 2px;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .langs{margin-left:auto}
+}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .langs{display:flex;gap:4px;font-size:.85rem}
@@ -147,6 +158,7 @@ footer a{color:var(--ink2)}
 <div class="wrap">
   <header>
     <a class="brand" href="../../"><img src="../../assets/icon-192.png" alt="">Emotion Vault</a>
+    <nav class="topnav"><a href="../../">Home</a><a href="../../#features">Features</a><a href="../../guide/" aria-current=page>Guides</a><a href="../../faq/">FAQ</a><a href="../../#support">Support</a></nav>
     <nav class="langs" aria-label="Language"><a href="../.././" hreflang="en" aria-current=page>English</a><a href="../../ko/" hreflang="ko">한국어</a><a href="../../ja/" hreflang="ja">日本語</a></nav>
   </header>
 <article class="guide"><p class="eyebrow"><a href="../">Guides</a></p><h1>How to Do 4-7-8 Breathing: One Minute for Anxiety and Sleep</h1><p class="lead">Steps and benefits of 4-7-8 breathing (inhale 4, hold 7, exhale 8), and how it differs from box breathing and the physiological sigh.</p><h2>The 4-7-8 steps</h2><p>1) Breathe in through your nose for 4 seconds. 2) Hold for 7 seconds. 3) Breathe out through your mouth for 8 seconds with a soft whoosh. Repeat four times.</p><h2>When to use it</h2><p>When you feel anxious, before sleep, or before something stressful. The long exhale tilts your body toward rest.</p><h2>Box breathing and the sigh</h2><p>Box breathing (4 in, 4 hold, 4 out, 4 hold) helps you focus. The physiological sigh, two short inhales and one long exhale, releases tension fast.</p><h2>A note of caution</h2><p>You may feel lightheaded at first. Shorten the counts and go at a comfortable pace.</p><div class="appnote"><b>Try it in Emotion Vault</b><p>Emotion Vault guides 4-7-8, box and sigh breathing with visuals and haptics.</p></div><h2>Related guides</h2><ul class="more-list"><li><a href="../stress-relief/">10 Ways to Relieve Stress: From Quick Fixes to Daily Habits</a></li><li><a href="../anger/">How to Calm Down When You&#x27;re Angry: 5 Steps Before You Say Something You&#x27;ll Regret</a></li><li><a href="../cant-sleep/">Can&#x27;t Sleep? 7 Things to Try on Nights Your Mind Won&#x27;t Stop</a></li><li><a href="../mood-journal/">How to Keep a Mood Journal: One Minute a Day Is Enough</a></li><li><a href="../law-of-attraction/">How to Practice the Law of Attraction: 5 Daily Habits</a></li><li><a href="../vision-board/">How to Make a Vision Board: Choosing Photos and Seeing It Every Day</a></li><li><a href="../affirmations/">Affirmation Examples and How to Write Your Own</a></li><li><a href="../letter-to-future-self/">How to Write a Letter to Your Future Self (With Examples)</a></li><li><a href="../subconscious/">How to Reprogram Your Subconscious Mind: Daily Habits</a></li></ul></article><section class="cta"><h2>Put today&#x27;s feelings away, gently.</h2><div class="stores"><a class="store" href="https://apps.apple.com/us/app/emotion-vault-stress-relief/id6814043279">Download on the App Store</a><a class="store" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk&hl=en">Get it on Google Play</a></div></section><!--/MAIN-->

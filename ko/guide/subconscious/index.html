@@ -33,7 +33,18 @@ html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:"Plex",-apple-system,"Apple SD Gothic Neo","Hiragino Sans",system-ui,sans-serif;line-height:1.6}
 a{color:var(--jade)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+header{display:flex;align-items:center;gap:18px;padding:16px 0}
+.topnav{display:flex;gap:4px;flex:1;margin-left:14px}
+.topnav a{padding:7px 12px;border-radius:99px;text-decoration:none;color:var(--ink2);font-size:.92rem;font-weight:600;white-space:nowrap}
+.topnav a:hover{background:var(--bg2);color:var(--ink)}
+.topnav a[aria-current]{background:var(--ink);color:var(--bg)}
+#features,#support{scroll-margin-top:20px}
+@media (max-width:860px){
+  header{flex-wrap:wrap;gap:10px}
+  .topnav{order:3;flex-basis:100%;margin:0 -20px;padding:0 20px 2px;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .langs{margin-left:auto}
+}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .langs{display:flex;gap:4px;font-size:.85rem}
@@ -147,6 +158,7 @@ footer a{color:var(--ink2)}
 <div class="wrap">
   <header>
     <a class="brand" href="../../"><img src="../../../assets/icon-192.png" alt="">마음창고</a>
+    <nav class="topnav"><a href="../../">홈</a><a href="../../#features">기능</a><a href="../../guide/" aria-current=page>가이드</a><a href="../../faq/">자주 묻는 질문</a><a href="../../#support">문의</a></nav>
     <nav class="langs" aria-label="언어"><a href="../../.././" hreflang="en">English</a><a href="../../../ko/" hreflang="ko" aria-current=page>한국어</a><a href="../../../ja/" hreflang="ja">日本語</a></nav>
   </header>
 <article class="guide"><p class="eyebrow"><a href="../">마음 가이드</a></p><h1>무의식 바꾸는 법: 잠재의식에 새기는 매일 습관</h1><p class="lead">무의식(잠재의식)이란 무엇이고 어떻게 바꿀 수 있는지. 반복 확언, 잠들기 전 시각화, 감정 털어내기 습관.</p><h2>무의식이란</h2><p>내가 의식하지 못하는 사이 생각과 행동을 이끄는 마음의 깊은 층이에요. 반복된 말과 감정, 습관이 쌓여 만들어져요.</p><h2>반복이 핵심</h2><p>같은 말과 장면을 꾸준히 반복해야 마음 깊이 자리 잡아요. 매일 짧게, 오래 하는 게 한 번에 길게 하는 것보다 좋아요.</p><h2>잠들기 직전이 좋은 이유</h2><p>잠들기 직전은 생각이 느려지고 마음이 편안해서 말이 깊이 스며들기 좋아요. 확언을 되뇌고 바라는 장면을 1분 떠올려요.</p><h2>쌓인 감정 먼저 비우기</h2><p>억누른 감정은 사라지지 않고 쌓여요. 먼저 감정에 이름을 붙이고 몸으로 털어낸 뒤에 새 말을 채워요.</p><h2>무의식과 끌어당김</h2><p>겉으로 바라도 속으로 &#x27;안 될 거야&#x27;라고 믿으면 행동이 따라가지 않아요. 바라는 장면이 자연스럽게 느껴질 때 실천이 쉬워져요.</p><div class="appnote"><b>마음창고로 해 보기</b><p>마음창고는 감정 털기, 1분 떠올리기, 잠들기 전 정리를 함께 할 수 있어요.</p></div><h2>함께 보면 좋은 글</h2><ul class="more-list"><li><a href="../stress-relief/">스트레스 해소법 10가지: 지금 바로 할 수 있는 방법부터 습관까지</a></li><li><a href="../anger/">화날 때 대처법: 후회할 말을 하기 전에 해 볼 5단계</a></li><li><a href="../478-breathing/">4-7-8 호흡법 하는 법: 불안할 때, 잠 안 올 때 1분 호흡</a></li><li><a href="../cant-sleep/">잠 안 올 때 하는 방법: 생각이 많은 밤을 위한 7가지</a></li><li><a href="../mood-journal/">감정일기 쓰는 법: 하루 1분이면 충분한 감정 기록 방법</a></li><li><a href="../law-of-attraction/">끌어당김의 법칙 하는 법: 매일 할 수 있는 실천 5가지</a></li><li><a href="../vision-board/">비전보드 만들기: 사진 고르는 법부터 매일 보는 방법까지</a></li><li><a href="../affirmations/">확언 예시와 나만의 확언 만드는 법</a></li><li><a href="../letter-to-future-self/">미래의 나에게 편지 쓰기: 쓰는 법과 예시</a></li><li><a href="../anxiety/">불안할 때 대처법: 갑자기 불안이 몰려올 때 5분 안에 하는 것</a></li><li><a href="../burnout/">번아웃 증상과 회복법: 지친 마음을 알아차리는 법</a></li><li><a href="../depressed/">우울할 때 하면 좋은 것 10가지</a></li><li><a href="../self-esteem/">자존감 높이는 법: 나에게 하는 말부터 바꾸기</a></li><li><a href="../gratitude-journal/">감사 일기 쓰는 법과 예시</a></li><li><a href="../manifestation-examples/">끌어당김 일기 예시 문장: 사랑·돈·일·건강</a></li><li><a href="../manifesting-not-working/">끌어당김이 안 되는 이유 4가지와 해결법</a></li><li><a href="../visualization/">시각화 명상 하는 법: 잠들기 전 1분</a></li><li><a href="../333-369-method/">333 기법, 369 기법 하는 법: 끌어당김 쓰기 방법</a></li><li><a href="../feeling-words/">감정 단어 목록: 내 마음에 정확한 이름 붙이기</a></li><li><a href="../after-breakup/">이별 후 마음 정리하는 법: 천천히 떠나보내기</a></li><li><a href="../comparison/">남과 비교할 때 마음 다스리는 법</a></li><li><a href="../work-stress/">회사 스트레스 푸는 법: 출근 전·업무 중·퇴근 후</a></li><li><a href="../exam-nerves/">시험·면접 전 긴장 푸는 법</a></li><li><a href="../parenting-anger/">아이에게 화냈을 때: 육아 스트레스 다루는 법</a></li><li><a href="../meditation-beginner/">명상 하는 법: 초보자를 위한 5분 명상</a></li><li><a href="../mindfulness/">마음챙김이란? 일상에서 하는 마음챙김 연습 5가지</a></li><li><a href="../emotional-regulation/">감정 조절 방법: 감정에 휩쓸리지 않는 4단계</a></li><li><a href="../lethargy/">무기력할 때 극복하는 법: 아무것도 하기 싫은 날</a></li><li><a href="../worry/">걱정이 많을 때 줄이는 법: 걱정 노트 쓰기</a></li><li><a href="../loneliness/">외로울 때 하면 좋은 것: 혼자인 시간을 견디는 법</a></li><li><a href="../bedtime-routine/">잠들기 전 루틴: 하루를 내려놓는 10분</a></li><li><a href="../morning-routine/">아침 루틴 만들기: 하루를 가볍게 여는 5분</a></li><li><a href="../money-affirmations/">돈 끌어당기는 확언과 실천법</a></li><li><a href="../specific-person/">특정인 끌어당김: 관계를 끌어당길 때 기억할 것</a></li></ul></article><section class="cta"><h2>오늘의 마음, 상자에 살며시 담아 두세요.</h2><div class="stores"><a class="store" href="https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%8C%EC%B0%BD%EA%B3%A0-%EB%81%8C%EC%96%B4%EB%8B%B9%EA%B9%80-%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%8A%A4-%ED%95%B4%EC%86%8C-%EA%B0%90%EC%A0%95%EC%9D%BC%EA%B8%B0/id6814043279">App Store에서 다운로드</a><a class="store" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk&hl=ko">Google Play에서 받기</a></div></section><!--/MAIN-->

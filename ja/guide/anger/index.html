@@ -33,7 +33,18 @@ html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:"Plex",-apple-system,"Apple SD Gothic Neo","Hiragino Sans",system-ui,sans-serif;line-height:1.6}
 a{color:var(--jade)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+header{display:flex;align-items:center;gap:18px;padding:16px 0}
+.topnav{display:flex;gap:4px;flex:1;margin-left:14px}
+.topnav a{padding:7px 12px;border-radius:99px;text-decoration:none;color:var(--ink2);font-size:.92rem;font-weight:600;white-space:nowrap}
+.topnav a:hover{background:var(--bg2);color:var(--ink)}
+.topnav a[aria-current]{background:var(--ink);color:var(--bg)}
+#features,#support{scroll-margin-top:20px}
+@media (max-width:860px){
+  header{flex-wrap:wrap;gap:10px}
+  .topnav{order:3;flex-basis:100%;margin:0 -20px;padding:0 20px 2px;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .langs{margin-left:auto}
+}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .langs{display:flex;gap:4px;font-size:.85rem}
@@ -147,6 +158,7 @@ footer a{color:var(--ink2)}
 <div class="wrap">
   <header>
     <a class="brand" href="../../"><img src="../../../assets/icon-192.png" alt="">感情倉庫</a>
+    <nav class="topnav"><a href="../../">ホーム</a><a href="../../#features">機能</a><a href="../../guide/" aria-current=page>ガイド</a><a href="../../faq/">よくある質問</a><a href="../../#support">お問い合わせ</a></nav>
     <nav class="langs" aria-label="言語"><a href="../../.././" hreflang="en">English</a><a href="../../../ko/" hreflang="ko">한국어</a><a href="../../../ja/" hreflang="ja" aria-current=page>日本語</a></nav>
   </header>
 <article class="guide"><p class="eyebrow"><a href="../">ガイド</a></p><h1>イライラ・怒りの対処法：後悔する言葉の前に試す5ステップ</h1><p class="lead">怒りが込み上げた時にすぐ使えるアンガーマネジメント。10秒止まる、長く吐く、体で発散、感情に名前をつける。</p><h2>怒ると体に何が起きるか</h2><p>心臓が速くなり、体が熱くなり、筋肉に力が入ります。この瞬間は考えより体が先に動くので、普段なら言わない言葉が出やすくなります。</p><h2>ステップ1：10秒止まる</h2><p>話したりメッセージを送ったりする前に10秒待ちます。この小さな間が後悔を大きく減らします。</p><h2>ステップ2：長く息を吐く</h2><p>吸う息の2倍の長さで吐きます。吐く息が長いと体は落ち着くモードに切り替わります。</p><h2>ステップ3：体で発散する</h2><p>人にぶつける代わりに安全な場所で出します。紙を破る、枕を叩く、早歩きがおすすめです。</p><h2>ステップ4〜5：名前をつけて記録する</h2><p>「イライラ」なのか「悔しい」なのか「寂しい」なのか、正確に名前をつけます。理由を1行残すと、次に同じ状況でも揺れにくくなります。</p><div class="appnote"><b>感情倉庫で試す</b><p>感情倉庫のSOSボタンは何も選ばずにすぐ呼吸へ。怒った時の発散モードもあります。</p></div><h2>あわせて読みたい</h2><ul class="more-list"><li><a href="../stress-relief/">ストレス発散方法10選：今すぐできることから毎日の習慣まで</a></li><li><a href="../478-breathing/">4-7-8呼吸法のやり方：不安な時、眠れない時の1分呼吸</a></li><li><a href="../cant-sleep/">眠れない時の対処法：考えが止まらない夜の7つの方法</a></li><li><a href="../mood-journal/">気分日記の書き方：1日1分で続く感情の記録</a></li><li><a href="../law-of-attraction/">引き寄せの法則のやり方：毎日できる5つの実践</a></li><li><a href="../vision-board/">ビジョンボードの作り方：写真の選び方から毎日見る方法まで</a></li><li><a href="../affirmations/">アファメーションの例文と自分だけの作り方</a></li><li><a href="../letter-to-future-self/">未来の自分への手紙の書き方と例文</a></li><li><a href="../subconscious/">潜在意識を書き換える方法：毎日の習慣</a></li></ul></article><section class="cta"><h2>今日の気持ちを、そっと倉庫にしまいましょう。</h2><div class="stores"><a class="store" href="https://apps.apple.com/jp/app/%E6%84%9F%E6%83%85%E5%80%89%E5%BA%AB-%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E7%99%BA%E6%95%A3%E3%81%A8%E5%BC%95%E3%81%8D%E5%AF%84%E3%81%9B/id6814043279">App Storeからダウンロード</a><a class="store" href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk&hl=ja">Google Playで手に入れよう</a></div></section><!--/MAIN-->
