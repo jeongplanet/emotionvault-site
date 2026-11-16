@@ -1,4 +1,5 @@
 build.py
 template.html
 faq_*.py
+guides_*.py
 __pycache__/
