@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://emotionvault.net/</loc></url>
-<url><loc>https://emotionvault.net/ko/</loc></url>
-<url><loc>https://emotionvault.net/ja/</loc></url>
-<url><loc>https://emotionvault.net/faq/</loc></url>
-<url><loc>https://emotionvault.net/ko/faq/</loc></url>
-<url><loc>https://emotionvault.net/ja/faq/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>https://emotionvault.net/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/"/></url>
+<url><loc>https://emotionvault.net/ko/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/"/></url>
+<url><loc>https://emotionvault.net/ja/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/"/></url>
+<url><loc>https://emotionvault.net/faq/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/faq/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/faq/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/faq/"/></url>
+<url><loc>https://emotionvault.net/ko/faq/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/faq/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/faq/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/faq/"/></url>
+<url><loc>https://emotionvault.net/ja/faq/</loc><lastmod>2026-11-16</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://emotionvault.net/faq/"/><xhtml:link rel="alternate" hreflang="ko" href="https://emotionvault.net/ko/faq/"/><xhtml:link rel="alternate" hreflang="ja" href="https://emotionvault.net/ja/faq/"/></url>
 </urlset>
