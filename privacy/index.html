@@ -69,7 +69,7 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0}
 <li>정보주체가 이 기능을 누르면 Google LLC가 제공하는 로그인 화면이 열리며, 정보주체가 직접 Google 계정으로 로그인하고 권한을 허용합니다. 서비스가 요청하는 권한은 <b>Google 드라이브의 앱 전용 숨김 폴더(appDataFolder)에 대한 접근(https://www.googleapis.com/auth/drive.appdata)</b> 하나뿐입니다. 서비스는 정보주체의 드라이브에 있는 다른 파일·사진·문서를 볼 수 없습니다.</li>
 <li>처리되는 정보
 <ul>
-<li>백업 파일: 제2조 제1항의 정보 중 감정 기록, 일기, 끌어당김 목표와 일기, 상태 지도, 도구함 기록, 7일 코스 진행, 미래의 나에게 쓴 편지, 즐겨찾기한 날. 비전보드 사진, 일기 사진, 앱 잠금 암호, 유료 이용권 기간은 포함되지 않습니다.</li>
+<li>백업 파일: 제2조 제1항의 정보 중 감정 기록, 일기, 끌어당김 목표와 일기, 상태 지도, 도구함 기록, 7일 코스 진행, 미래의 나에게 쓴 편지, 즐겨찾기한 날, 비전보드 사진과 사진 설명·배치 정보, 일기 사진. 앱 잠금 암호와 유료 이용권 기간은 포함되지 않습니다.</li>
 <li>Google이 로그인 과정에서 발급하는 접근 토큰. 토큰은 백업·불러오기를 하는 동안 단말기 메모리에서만 쓰이고 서비스가 따로 저장하지 않습니다.</li>
 </ul></li>
 <li>백업 파일은 정보주체의 단말기와 Google 드라이브 사이에서 암호화된 통신(HTTPS)으로 직접 주고받습니다. 개발자는 백업 파일, 접근 토큰, Google 계정 정보를 받거나 열람하거나 보관하지 않습니다.</li>
@@ -201,8 +201,8 @@ hr{border:0;border-top:1px solid var(--line);margin:48px 0}
 <ul>
 <li>Pass holders can choose to back up their records to Google Drive. Nothing happens unless you tap the backup or restore button.</li>
 <li>You sign in through Google's own sign-in screen. The app requests a single scope, <code>https://www.googleapis.com/auth/drive.appdata</code>, which only allows access to a hidden, app-specific folder in your Drive. The app cannot see any of your other Drive files.</li>
-<li>The backup file contains your mood entries, diary text, manifestation goals and journal, state maps, toolbox history, 7-day course progress, letters to your future self and favorite days. It does not contain vision board or diary photos, your app lock code or your pass period.</li>
-<li>The file travels directly between your device and Google Drive over HTTPS. The developer never receives, views or stores your backup, your Google account information or your access token. The token is kept in memory only while a backup or restore runs.</li>
+<li>The backup contains your mood entries, diary text, manifestation goals and journal, state maps, toolbox history, 7-day course progress, letters to your future self, favorite days, vision board photos (with captions and layout) and diary photos. It does not contain your app lock code or your pass period.</li>
+<li>The files travel directly between your device and Google Drive over HTTPS. The developer never receives, views or stores your backup, your Google account information or your access token. The token is kept in memory only while a backup or restore runs.</li>
 <li>Delete the backup any time: Google Drive on the web → Settings → Manage apps → Emotion Vault → Options → Delete hidden app data. Revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
 <li>Emotion Vault's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to save and restore your backup; it is never used for advertising, sold, or shared with anyone.</li>
 </ul>
