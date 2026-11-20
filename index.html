@@ -45,12 +45,18 @@ header{display:flex;align-items:center;gap:18px;padding:16px 0}
   .topnav{order:3;flex-basis:100%;margin:0 -20px;padding:0 20px 2px;overflow-x:auto;scrollbar-width:none}
   .topnav::-webkit-scrollbar{display:none}
   .langs{margin-left:auto}
+  .topnav{flex-basis:calc(100% - 76px);margin-right:0;padding-right:0}
+  .hstores{order:4}
 }
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;color:var(--ink)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .langs{display:flex;gap:4px;font-size:.85rem}
 .langs a{padding:5px 10px;border-radius:99px;text-decoration:none;color:var(--ink2)}
 .langs a[aria-current]{background:var(--bg2);color:var(--ink);font-weight:600}
+.hstores{display:flex;gap:6px}
+.hstores a{display:grid;place-items:center;width:34px;height:34px;border-radius:99px;background:var(--ink);color:var(--bg)}
+.hstores a:hover{transform:translateY(-1px)}
+.hstores svg{width:18px;height:18px;fill:currentColor}
 .herox{position:relative;overflow:hidden;margin-top:-4px;padding:34px 0 70px;isolation:isolate}
 .sky{position:absolute;inset:0;z-index:-1;background:linear-gradient(170deg,#F7F4EE 0%,#F9ECEF 45%,#E7F1EC 100%)}
 .sky i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.75}
@@ -168,6 +174,7 @@ footer a{color:var(--ink2)}
     <a class="brand" href="./"><img src="assets/icon-192.png" alt="">Emotion Vault</a>
     <nav class="topnav"><a href="./" aria-current=page>Home</a><a href="./#features">Features</a><a href="guide/">Guides</a><a href="faq/">FAQ</a><a href="./#support">Support</a></nav>
     <nav class="langs" aria-label="Language"><a href="./" hreflang="en" aria-current=page>English</a><a href="ko/" hreflang="ko">한국어</a><a href="ja/" hreflang="ja">日本語</a></nav>
+    <nav class="hstores"><a href="https://apps.apple.com/us/app/emotion-vault-stress-relief/id6814043279" aria-label="Download on the App Store" title="Download on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.65zM14.1 5.85c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.68-1.28z"/></svg></a><a href="https://play.google.com/store/apps/details?id=com.hesoapp.tuk&hl=en" aria-label="Get it on Google Play" title="Get it on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.3-9.7-9.3-9.7zm10.4 8.6 2.6-2.7L5.4 1.8c-.4-.2-.8-.3-1.1-.2l9.7 9.3zm0 2.2-9.7 9.3c.3.1.7 0 1.1-.2l11.2-6.4-2.6-2.7zm6.6-2.6-2.7-1.6-2.9 3 2.9 3 2.7-1.6c.8-.5.8-1.8 0-2.8z"/></svg></a></nav>
   </header>
 <!--MAIN-->
 
